@@ -1,0 +1,498 @@
+@import 'utilities.css';
+
+:root{
+    --prmary: #FF7A00;
+    --dark: #161616;
+    --pure: #FFFFFF;
+    --ternary: #898989;
+    --light: #F2F2F2;
+    --secondary: #070606;
+    --lightprim: #7fe3f9;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+}
+
+header{
+    background-color: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 88%, 0 100%);
+}
+
+.logo {
+    max-width: 120px;
+    position: absolute;
+    top: 1px;
+    left: 50px;
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right: 3rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+header nav .left a:hover{
+    color: var(--prmary);
+}
+
+header nav{
+    padding: 2rem 0;
+}
+
+header nav .branding{
+    margin-right: 3rem;
+}
+
+.selfintro{
+    padding: 3rem 0;
+}
+
+.selfintro .left img{
+    width: 500px;
+}
+
+.selfintro .right{
+    color: var(--pure);
+    margin-top:-7rem; ;
+}
+
+.selfintro .right h6{
+    font-size: 1.6rem;
+    color: var(--prmary);
+    margin-bottom: 0.5rem;
+}
+
+.selfintro .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: var(--light);
+}
+
+.selfintro .right h1 span{
+    color: var(--prmary);
+}
+
+.selfintro .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    color: var(--light);
+}
+
+section{
+    padding: 6rem 0;
+}
+
+section.about .about-me.img{
+    height: 450px;
+}
+
+.about-me-img {
+    max-width: 90%; 
+    height: auto;
+    display: block;
+    margin-right: 2rem; 
+}
+
+/*section.about img{
+    width: 300px;
+    height: 350px;
+}*/
+
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+section.about h1 span{
+    color: var(--prmary);
+}
+
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+section.about p{
+    font-family: sans-serif;
+    color: var(--ternary);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+section.about h1, h1 span, h3, p{
+    margin-top: 6rem;
+}
+
+section.about .media{
+    display: flex;
+}
+
+section.about .media a{
+    /*background: var(--ternary);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 1rem;
+    transition: all .3s ease;
+}
+
+section.about .media a:hover{
+    background: var(--prmary);
+}
+
+section.about .media a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.Services-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.Services-heading span{
+    color: var(--prmary);
+}
+
+.Services-heading + p{
+    color: var(--ternary);
+    font-family: sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+
+section.services{
+    background: var(--light);
+}
+
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 7rem;
+
+}
+
+section.services .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 6rem;
+    text-align: center;
+    transition: all .4s ease;
+}
+
+section.services .card-wrapper .card img{
+    width: 8rem;
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.services .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.services .card-wrapper .card p{
+    font-family: sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+
+section.services .card-wrapper .card:hover{
+    background: var(--prmary);
+
+}
+
+section.services .card-wrapper .card:hover h2 , section.services .card-wrapper .card:hover{
+ color: var(--pure);   
+}
+
+/* asdfasdfasdfasdfasdf
+asdfasdf
+asdfasdfasdfdddddddddddddddddddddddddddddddddddddddddd */
+
+.achievement-heading{
+    color: var(--light);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-top: 4rem;
+    line-height: 0.5;
+    font-size: 60px;
+}
+
+.achievement-heading span{
+    color: var(--prmary);
+}
+.achievement-heading img{
+    width: 200px;
+    
+}
+
+.achievement-heading + p{
+    color: var(--pure);
+    font-family: sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+    text-size-adjust: 12%;
+    font-size: 25px;
+}
+
+section.achievements {
+    background-color: #837a7a;
+    padding: 40px 0; 
+}
+
+section.achievement .container {
+    max-width: 1160px; 
+    margin: 0 auto; /* Center the container */
+}
+
+.pdf-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5rem;
+    grid-row-gap: 5rem;
+}
+
+.pdf:hover {
+    transform: scale(1.8); 
+    transition: transform 0.5s ease-in-out; 
+}
+
+.pdf {
+    transition: transform 0.3s ease-in-out; 
+}
+
+.pdf {
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+.pdf:nth-child(1) {
+    background-color:var(--prmary); 
+}
+
+.pdf:nth-child(2) {
+    background-color:var(--light); 
+}
+
+.pdf:nth-child(3) {
+    background-color:var(--light); 
+}
+
+.pdf:nth-child(4) {
+    background-color: var(--prmary); 
+}
+
+.pdf img {
+    max-width: 100%; 
+    border-radius: 8px; 
+}
+
+.pdf h2 {
+    margin-top: 20px;
+    color: #333;
+    text-align: center;
+    padding-bottom: 1rem;
+    
+}
+
+.pdf p {
+    color: #666; 
+    text-align: center;
+    size: px;
+}
+
+/* section.Entrepreneurship{
+
+} */
+
+
+/* .container {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+} */
+/* Apply these styles to your existing stylesheet or create a new one */
+
+.entrepreneurship {
+    background-color:var(--light);
+    padding: 50px 0;
+}
+
+section.entrepreneurship .entrepreneurship-head h1{
+    font-size: 60px;
+    color: var(--prmary);
+    padding-bottom: 4rem;
+
+}
+
+/* .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+} */
+
+.moster{
+    text-align: center;
+}
+.tufaan {
+    text-align: center;
+
+}
+
+.moster img, .tufaan img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding-bottom: 3rem;
+}
+.tufaan img{
+    padding-top: 3rem;
+}
+h5 {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+h5 span {
+    color:var(--prmary); /* Customize the color as needed */
+}
+
+p {
+    color:var(--dark);
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-top: 20px;
+    padding-bottom: 2rem;
+}
+
+button {
+    background-color: var(--prmary);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color:var(--secondary); /* Darker shade on hover */
+}
+
+section.contact .section-heading{
+    text-align: center;
+}
+section.contact .section-heading span{
+color: var(--prmary);}
+
+section.contact p{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+
+section.contact .card-wrapper{
+text-align: center;
+padding-top: 4rem;
+}
+
+section.contact .card-wrapper .card img{
+    margin-bottom:3rem;
+    width: 100px;
+}
+
+section.contact .card-wrapper .card h1{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+section.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--ternary);
+
+}
+
+footer{
+    background: var(--prmary);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer .footer-logo{
+    margin-bottom: 2rem;
+    width: 100px;
+}
+footer .footer-img1, .footer-img2, .footer-img3{
+    margin-bottom: 2rem;
+    width: 40px;
+}
+footer .footer-social a{
+    margin-right: 1rem;
+}
+
+footer .footer-social{
+    margin-bottom:1rem;
+    margin-left: -1rem;
+    
+    
+}
+
+footer .copyright{
+    columns: var(--ternary);
+}
+/* 
+@media (max-width: 1024px){
+    header #main-nav{
+        display: ;
+    }
+} */
